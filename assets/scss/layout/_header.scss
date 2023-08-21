@@ -1,0 +1,25 @@
+nav{
+  background-color: #AA0601;
+  padding: 12px 0;
+  margin-bottom: 20px;
+}
+.navbar-wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo img{
+  width: 80px;
+}
+.navbar{
+  display: flex;
+}
+.navbar-links{
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  padding: 8px 32px;
+}
+.navbar-items:last-child .navbar-links{
+  padding-right: 0;
+}

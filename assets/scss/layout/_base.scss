@@ -1,0 +1,27 @@
+@import './mixin';
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+    line-height: 1.5;
+}
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 12px;
+    @include pad{
+        max-width: 720px;
+    }
+    @include mobile{
+        max-width: 372px;
+    }
+}
