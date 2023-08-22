@@ -1,6 +1,6 @@
 // 推擠樣式
 @import './mixin';
-$max: 10;
+$max: 20;
 @for $i from 0 through $max{
     // margin setting
     .mx-#{$i}{
