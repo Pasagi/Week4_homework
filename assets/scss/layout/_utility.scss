@@ -45,8 +45,8 @@ $max: 20;
         padding-left: $i * 4px;
     }
 }
-.mt-44{
-    margin-top: 44 * 4px;
+.pt-44{
+    padding-top: 44 * 4px;
 }
 
 @include pad{
@@ -140,12 +140,17 @@ $max: 20;
             padding-left: $i * 4px;
         }
     }
-
+    .pt-sm-40{
+        padding-top: 40 * 4px;
+    }
 }
 
 // PC col
 .col-3{
     width: 25%;
+}
+.col-4{
+    width: 31.3333%;
 }
 .col-5{
     width: 41.6666%;
@@ -176,6 +181,9 @@ $max: 20;
 }
 .flex-row{
     flex-direction: row;
+}
+.flex-wrap{
+    flex-wrap: wrap;
 }
 .flex-row-reverse{
     flex-direction: row-reverse;
@@ -215,6 +223,9 @@ $max: 20;
 }
 .align-items-stretch{
     align-items: stretch;
+}
+.text-align-center{
+    text-align: center;
 }
 
 @include pad{
@@ -325,11 +336,20 @@ $max: 20;
     }
 }
 // border
+.border-all-1{
+    border-top: 1px;
+    border-right: 1px;
+    border-bottom: 1px;
+    border-left: 1px;
+}
 .border-right-2{
     border-right: 8px;
 }
 .border-color-primary{
     border-color: $primary;
+}
+.border-color-gray{
+    border-color: $border-gray;
 }
 .border-style-solid{
     border-style: solid;
@@ -359,8 +379,8 @@ $max: 20;
 .fs-36px{
     font-size: 36px;
 }
-.font-color-212529{
-    color: #212529;
+.font-color-secondary{
+    color: $secondary;
 }
 
 @include mobile{
@@ -370,11 +390,17 @@ $max: 20;
     .fs-sm-4{
         font-size: $h4-font-size;
     }
+    .fs-sm-2{
+        font-size: $h2-font-size;
+    }
 }
 
 // background Setting
 .bg-color-primary{
     background-color: $primary;
+}
+.bg-color-black{
+    background-color: $black;
 }
 
 
