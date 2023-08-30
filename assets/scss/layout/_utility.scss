@@ -45,6 +45,9 @@ $max: 20;
         padding-left: $i * 4px;
     }
 }
+.mt-44{
+    margin-top: 44 * 4px;
+}
 
 @include pad{
     @for $i from 0 through $max{
@@ -137,7 +140,7 @@ $max: 20;
             padding-left: $i * 4px;
         }
     }
-    
+
 }
 
 // PC col
@@ -257,6 +260,12 @@ $max: 20;
     .d-sm-flex{
         display: flex;
     }
+    .d-sm-none{
+        display: none;
+    }
+    .d-sm-block{
+        display: block;
+    }
     .flex-sm-row{
         flex-direction: row;
     }
@@ -307,8 +316,51 @@ $max: 20;
     }
 }
 // border
+.border-right-2{
+    border-right: 8px;
+}
+.border-color-primary{
+    border-color: $primary;
+}
+.border-style-solid{
+    border-style: solid;
+}
 @include mobile{
-    .border-sm-1-fff{
+    .border-sm-1-white{
         border: 1px solid #fff;
     }
+}
+
+//font Setting
+.font-weight-bold{
+    font-weight: bold;
+}
+.fs-base{
+    font-size: $font-size-base;
+}
+.fs-2{
+    font-size: $h2-font-size;
+}
+.fs-4{
+    font-size: $h4-font-size;
+}
+.fs-5{
+    font-size: $h5-font-size;
+}
+.fs-36px{
+    font-size: 36px;
+}
+
+@include mobile{
+    .fs-sm-base{
+        font-size: $font-size-base;
+    }
+    .fs-sm-4{
+        font-size: $h4-font-size;
+    }
+}
+
+// background Setting
+.bg-color-primary{
+    background-color: $primary;
 }
